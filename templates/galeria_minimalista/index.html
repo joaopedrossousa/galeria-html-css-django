@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria Minimal — Preto & Cinza</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Landing page de galeria em tons de preto e cinza, com grid responsivo e lightbox sem JavaScript." />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="#" class="logo" aria-label="Página inicial">GM</a>
+      <nav class="nav" aria-label="Primária">
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato" class="btn-ghost">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-wrap">
+      <h1>Elegância em Preto & Cinza</h1>
+      <p>Uma curadoria visual sóbria, com foco no contraste, textura e forma. Deslize pela galeria e explore cada detalhe.</p>
+      <a href="#galeria" class="btn-primary">Ver Galeria</a>
+    </div>
+    <div class="hero-gradient" aria-hidden="true"></div>
+  </section>
+
+  <!-- Destaques / métricas (opcional) -->
+  <section class="metrics">
+    <div class="container metrics-grid">
+      <div class="metric">
+        <span class="metric-num">120+</span>
+        <span class="metric-label">Imagens</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">08</span>
+        <span class="metric-label">Coleções</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">4K</span>
+        <span class="metric-label">Resolução</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">∞</span>
+        <span class="metric-label">Inspiração</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="gallery-section" aria-labelledby="galeria-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="galeria-title">Galeria</h2>
+        <p>Toque/click para ampliar. Use <kbd>Esc</kbd> ou o botão fechar para sair.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Card 1 -->
+        <a class="card" href="#img-1" aria-label="Abrir imagem 1 em tela cheia">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+              alt="Montanhas com neblina, composição minimalista em tons escuros." />
+            <figcaption>Serra Nebulosa</figcaption>
+          </figure>
+        </a>
+
+        <!-- Card 2 -->
+        <a class="card" href="#img-2" aria-label="Abrir imagem 2 em tela cheia">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1200&auto=format&fit=crop"
+              alt="Detalhe arquitetônico com sombras e linhas diagonais." />
+            <figcaption>Geometria Urbana</figcaption>
+          </figure>
+        </a>
+
+        <!-- Card 3 -->
+        <a class="card" href="#img-3" aria-label="Abrir imagem 3 em tela cheia">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1200&auto=format&fit=crop"
+              alt="Floresta densa com iluminação suave, atmosfera cinza." />
+            <figcaption>Silêncio da Mata</figcaption>
+          </figure>
+        </a>
+
+        <!-- Card 4 -->
+        <a class="card" href="#img-4" aria-label="Abrir imagem 4 em tela cheia">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop"
+              alt="Praia deserta com mar revolto, clima dramático." />
+            <figcaption>Mar Sombrio</figcaption>
+          </figure>
+        </a>
+
+        <!-- Card 5 -->
+        <a class="card" href="#img-5" aria-label="Abrir imagem 5 em tela cheia">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop"
+              alt="Deserto com dunas e textura monocromática." />
+            <figcaption>Dunas</figcaption>
+          </figure>
+        </a>
+
+        <!-- Card 6 -->
+        <a class="card" href="#img-6" aria-label="Abrir imagem 6 em tela cheia">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+              alt="Cume de montanha com céu encoberto, contraste forte." />
+            <figcaption>Cume</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightboxes CSS-only -->
+  <div id="img-1" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada 1">
+    <div class="lightbox-content">
+      <a href="#" class="close" aria-label="Fechar">&times;</a>
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop" alt="Serra Nebulosa ampliada" />
+      <p class="caption">Serra Nebulosa — textura e profundidade em tons frios.</p>
+    </div>
+  </div>
+
+  <div id="img-2" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada 2">
+    <div class="lightbox-content">
+      <a href="#" class="close" aria-label="Fechar">&times;</a>
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1600&auto=format&fit=crop" alt="Geometria Urbana ampliada" />
+      <p class="caption">Geometria Urbana — linhas, ritmo e sombra.</p>
+    </div>
+  </div>
+
+  <div id="img-3" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada 3">
+    <div class="lightbox-content">
+      <a href="#" class="close" aria-label="Fechar">&times;</a>
+      <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1600&auto=format&fit=crop" alt="Silêncio da Mata ampliada" />
+      <p class="caption">Silêncio da Mata — névoa e silêncio visual.</p>
+    </div>
+  </div>
+
+  <div id="img-4" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada 4">
+    <div class="lightbox-content">
+      <a href="#" class="close" aria-label="Fechar">&times;</a>
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop" alt="Mar Sombrio ampliada" />
+      <p class="caption">Mar Sombrio — energia e melancolia.</p>
+    </div>
+  </div>
+
+  <div id="img-5" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada 5">
+    <div class="lightbox-content">
+      <a href="#" class="close" aria-label="Fechar">&times;</a>
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1600&auto=format&fit=crop" alt="Dunas ampliada" />
+      <p class="caption">Dunas — minimalismo e textura.</p>
+    </div>
+  </div>
+
+  <div id="img-6" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada 6">
+    <div class="lightbox-content">
+      <a href="#" class="close" aria-label="Fechar">&times;</a>
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" alt="Cume ampliada" />
+      <p class="caption">Cume — contraste de rocha e céu.</p>
+    </div>
+  </div>
+
+  <!-- Sobre -->
+  <section id="sobre" class="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>Sobre a Curadoria</h2>
+        <p>
+          Este projeto celebra o poder do monocromático: quando retiramos a cor, forma, luz e textura ganham protagonismo. 
+          Cada imagem foi escolhida para dialogar com o vazio, o ruído e a pausa.
+        </p>
+        <a href="#contato" class="btn-ghost">Fale conosco</a>
+      </div>
+      <div class="about-card" aria-hidden="true">
+        <div class="chip">Monocromia</div>
+        <div class="chip">Textura</div>
+        <div class="chip">Contraste</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contato -->
+  <section id="contato" class="cta">
+    <div class="container cta-wrap">
+      <h2>Quer licenciar alguma imagem?</h2>
+      <p>Envie um e-mail para <a href="mailto:contato@galeriaexemplo.com">contato@galeriaexemplo.com</a> com o ID da obra e o uso pretendido.</p>
+      <a href="mailto:contato@galeriaexemplo.com" class="btn-primary" aria-label="Abrir cliente de e-mail para contato">
+        Entrar em contato
+      </a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> Galeria Minimal. Todos os direitos reservados.</p>
+      <a href="#top" class="back-top" aria-label="Voltar ao topo">Topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Pequeno script só para o ano (opcional) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
